@@ -58,10 +58,18 @@
 		<!-- Dependencias para manejar JSPs -->
 		<dependency>
 			<groupId>org.apache.tomcat.embed</groupId>
-			<artifactId>tomcat-ebed-jasper</artifactId>
+			<artifactId>tomcat-embed-jasper</artifactId>
 		</dependency>
 
-		<!-- Dependencias para manejar JSPs -->
+		<!-- Dependencias para manejar JSTL -->
+		<dependency>
+			<groupId>jakarta.servlet.jsp.jstl</groupId>
+			<artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish.web</groupId>
+			<artifactId>jakarta.servlet.jsp.jstl</artifactId>
+		</dependency>
 
 
 	</dependencies>

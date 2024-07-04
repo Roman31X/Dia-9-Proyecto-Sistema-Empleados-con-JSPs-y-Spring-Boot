@@ -14,21 +14,22 @@ public class EmpleadoServicio implements IEmpleadoServicio{
 
     @Override
     public List<Empleado> listarEmpleados() {
-        return null;
+        return empleadoRepositorio.findAll();
     }
 
     @Override
     public Empleado buscarEmpleadoPorID(Integer idEmpleado) {
-        return null;
+        Empleado empleado = empleadoRepositorio.findById(idEmpleado).orElse(null);
+        return empleado;
     }
 
     @Override
     public void furadarEmpleado(Empleado empleado) {
-
+        empleadoRepositorio.save(empleado);
     }
 
     @Override
     public void eliminarEmpleado(Empleado empleado) {
-
+        empleadoRepositorio.delete(empleado);
     }
 }

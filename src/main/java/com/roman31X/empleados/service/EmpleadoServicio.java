@@ -24,7 +24,7 @@ public class EmpleadoServicio implements IEmpleadoServicio{
     }
 
     @Override
-    public void furadarEmpleado(Empleado empleado) {
+    public void guardarEmpleado(Empleado empleado) {
         empleadoRepositorio.save(empleado);
     }
 
